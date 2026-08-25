@@ -1004,3 +1004,42 @@ body.light-mode .app-nav-bar {
     background-color: var(--border-color);
     border-radius: 2px;
 }
+/* Font-size scale override — change --font-scale to adjust sizes globally */
+:root {
+  --font-scale: 1.15; /* 1.00 = unchanged, 1.15 = +15% */
+}
+
+/* Base body size (affects rem/em inheritance) */
+body {
+  font-size: calc(16px * var(--font-scale));
+}
+
+/* Header / Titles */
+.app-header h1 { font-size: calc(26px * var(--font-scale)); }
+
+/* Player / Drill */
+#drill-progress-text { font-size: calc(13px * var(--font-scale)); }
+.drill-eng-word { font-size: calc(20px * var(--font-scale)); }
+.drill-bn-inf { font-size: calc(40px * var(--font-scale)); }
+.drill-conj-item .pronoun { font-size: calc(11px * var(--font-scale)); }
+.drill-conj-item .form { font-size: calc(16px * var(--font-scale)); }
+
+/* Grid & Cards */
+.verb-card-header .eng-title { font-size: calc(17px * var(--font-scale)); }
+.verb-card-header .bn-inf { font-size: calc(20px * var(--font-scale)); }
+.card-conj-item .pronoun { font-size: calc(11px * var(--font-scale)); }
+.card-conj-item .form { font-size: calc(14px * var(--font-scale)); }
+
+/* Quiz */
+.quiz-prompt { font-size: calc(24px * var(--font-scale)); }
+.quiz-option-btn { font-size: calc(15px * var(--font-scale)); }
+
+/* Controls & UI bits */
+.speed-btn { font-size: calc(12px * var(--font-scale)); }
+.slider-value { font-size: calc(12px * var(--font-scale)); }
+.nav-item span { font-size: calc(11px * var(--font-scale)); }
+
+/* Small responsive tweak for very small screens - keep sizes readable */
+@media (max-width: 360px) {
+  :root { --font-scale: 1.05; }
+}
