@@ -1015,7 +1015,7 @@ body {
 }
 
 /* Header / Titles */
-.app-header h1 { font-size: calc(26px * var(--font-scale)); }
+/*.app-header h1 { font-size: calc(26px * var(--font-scale)); }*/
 
 /* Player / Drill */
 #drill-progress-text { font-size: calc(13px * var(--font-scale)); }
