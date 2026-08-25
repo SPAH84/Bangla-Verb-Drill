@@ -1006,7 +1006,7 @@ body.light-mode .app-nav-bar {
 }
 /* Font-size scale override — change --font-scale to adjust sizes globally */
 :root {
-  --font-scale: 1.9; /* 1.00 = unchanged, 1.15 = +15% */
+  --font-scale: 2.9; /* 1.00 = unchanged, 1.15 = +15% */
 }
 
 /* Base body size (affects rem/em inheritance) */
@@ -1040,6 +1040,6 @@ body {
 .nav-item span { font-size: calc(11px * var(--font-scale)); }
 
 /* Small responsive tweak for very small screens - keep sizes readable */
-@media (max-width: 360px) {
+@media (max-width: 260px) {
   :root { --font-scale: 1.05; }
 }
