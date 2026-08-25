@@ -1006,7 +1006,7 @@ body.light-mode .app-nav-bar {
 }
 /* Font-size scale override — change --font-scale to adjust sizes globally */
 :root {
-  --font-scale: 2.1; /* 1.00 = unchanged, 1.15 = +15% */
+  --font-scale: 1.6; /* 1.00 = unchanged, 1.15 = +15% */
 }
 
 /* Base body size (affects rem/em inheritance) */
